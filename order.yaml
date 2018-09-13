@@ -12,6 +12,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
-label: branchA-edited    
+label: branchA-edited-1    
 einvoice:
   url: http://127.0.0.1:7897/invoice

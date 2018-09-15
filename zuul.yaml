@@ -2,6 +2,31 @@ zuul:
   routes:
     product: /myProduct/**
     config: /configServer/**
-  ignored-patterns:
-    - /**/product/list
+  #ignored-patterns:
+    #- /**/product/list
+    
+
+
+
+# 使用eureka注册服务的一般写法（path和serviceId的key - value）
+#zuul:
+  #routes:
+    #productService:
+      #path: /myProduct/**
+      #serviceId: product
+
+# 使用eureka注册服务的简洁写法（zuul.routes.${serviceId}: ${path}}）
+#zuul:
+  #routes:
+    #product: /myProduct/**
+    #config: /configServer/**
+  #ignored-patterns:
+    #- /**/product/list
+
+# 不使用eureka注册服务的写法
+#zuul:
+  #routes:
+    #product:
+      #path: /myProduct1/**
+      #url: http://127.0.0.1:9002
     

@@ -1,8 +1,7 @@
 zuul:
   routes:
-    #product: /myProduct/**
+    product: /myProduct/**
     config: /configServer/**
-    product: /newProduct/**
   ignored-patterns:
     - /**/product/list
     

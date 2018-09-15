@@ -4,3 +4,4 @@ zuul:
     config: /configServer/**
   ignored-patterns:
     - /**/product/list
+    
